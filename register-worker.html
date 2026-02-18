@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Worker Registration | HomeEase</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<section class="form-container">
+  <h2>Worker Registration</h2>
+
+  <form id="workerRegisterForm" action="/auth/register-worker" method="post">
+    <div class="form-grid">
+
+      <!-- Personal -->
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <input type="password" placeholder="Password" required>
+      <input type="date" required>
+
+      <!-- Location -->
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="State" required>
+      <input type="text" placeholder="Pincode" required>
+
+      <!-- Work -->
+      <select required>
+        <option value="">Select Category</option>
+        <option>Electrician</option>
+        <option>Plumber</option>
+        <option>Cleaner</option>
+        <option>Painter</option>
+        <option>Carpenter</option>
+      </select>
+
+      <input type="number" placeholder="Experience (Years)" required>
+      <input type="number" placeholder="Min Charge (₹)" required>
+      <input type="number" placeholder="Max Charge (₹)" required>
+
+      <textarea rows="3" placeholder="Short Bio / Description"></textarea>
+    </div>
+
+    <button class="btn">Register</button>
+    <p style="margin-top:10px;color:#777">
+      * Registration will be approved by admin
+    </p>
+  </form>
+</section>
+
+</body>
+</html>
